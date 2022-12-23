@@ -1,0 +1,58 @@
+.portfolio {
+    margin-bottom: 90px;
+}
+.portfolio__info {
+}
+.info__title {
+    @include text ($font, 700, 44px, 52px, $color-white);
+    margin-bottom: 17px;
+    
+}
+.span__primary {
+    @include text ($font, 700, 44px, 52px, $color-primary);
+}
+.info__desc {
+    @include text ($font, 400, 16px, 26px, $color-dark);
+    max-width: 460px;
+    margin-bottom: 40px;
+}
+.row {
+    align-items: center;
+   
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.col-5 {
+}
+.portfolio__img {
+}
+.portfolio__img-primary {
+    position: relative;
+}
+.cover {
+   
+&__icon {
+    position: absolute;
+   cursor: pointer;
+    top: 33%;
+    left: 38%;
+    font-size: 44px;
+    padding: 15px;
+    color: $color-white;
+    background: $color-primary;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+    &:hover {
+        transform: scale(1.5);
+      }
+      @include mobile {
+        top: 22%;
+        left: 30%;
+      }
+}
+
+    
+
+}

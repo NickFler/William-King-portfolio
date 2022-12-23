@@ -1,0 +1,54 @@
+.service {
+    margin-bottom: 90px;
+}
+.service__main {
+}
+.main__title {
+    @include text ($font, 700, 44px, 52px, $color-white);
+    margin-bottom: 17px;
+}
+.service__span {
+    @include text ($font, 700, 44px, 52px, $color-primary);
+    
+}
+.main__desc {
+    @include text ($font, 400, 16px, 26px, $color-dark);
+    margin-bottom: 40px;
+    max-width: 460px;
+}
+
+.service__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.service__item {
+   display: flex;
+   gap: 20px;
+    padding: 32px 32px;
+    background: $color-grey;
+    border-radius: 12px;
+
+}
+.item__img {
+}
+.item__title {
+    @include text ($font, 500, 22px, 26px, $color-white);
+    margin-bottom: 12px;
+}
+.item__desc {
+    max-width: 397px;
+    @include text ($font, 400, 16px, 26px, $color-dark);
+}
+
+.item__desc-main {
+    max-width: 397px;
+    @include text ($font, 400, 16px, 26px, $color-white);
+}

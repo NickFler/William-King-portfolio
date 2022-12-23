@@ -1,0 +1,41 @@
+.footer {
+    background: $color-grey;
+    @include mobile {
+        display: flex!important;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    }
+    
+
+.footer__logo {
+    @include text ($font, 400, 16px, 19px, $color-white);
+}
+.span__primary-footer{
+@include text ($font, 400, 16px, 19px, $color-primary);
+}
+.footer__social {
+   
+    
+}
+.footer__nav {
+}
+.footer__ul {
+    display: flex;
+    gap: 34px;
+    @include mobile {
+        flex-direction: column;
+    align-items: center;
+    }
+}
+.footer__li {
+}
+.footer__a {
+    @include text ($font, 400, 16px, 19px, $color-white);
+    text-decoration: none;
+    transition: .3s ease-in-out;
+    &:hover {
+        color: $color-primary;
+        text-decoration: underline;
+    }
+}
